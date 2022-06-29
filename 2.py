@@ -1,17 +1,17 @@
-str1 = input(" введите строку : ")
-str2 = input(" введите строку : ")
+a = input(" введите строку : ")
+b = input(" введите строку : ")
 
 
 # функция количества строк
-if(len(str1) == len(str2)):
+if(len(a) == len(b)):
 
     # Сортируем обе строки
-    sorstr1 = sorted(str1)
-    sorstr2 = sorted(str2)
+    s1 = sorted(a)
+    s2 = sorted(b)
 
-    if(sorstr1 == sorstr2):
-        print(str1 + " и " + str2 + " Являются анаграмой.")
+    if(s1 == s2):
+        print(a + " и " + b + " Являются анаграмой.")
 
 
 else:
-    print(str1 + " и " + str2 + " не являются анаграмой")
+    print(a + " и " + b + " не являются анаграмой")
